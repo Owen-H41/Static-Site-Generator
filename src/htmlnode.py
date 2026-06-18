@@ -13,7 +13,7 @@ class HTMLNode:
             return ""
         props_list = []
         for prop in self.props:
-            props_list.append(f" {prop}={self.props[prop]}")
+            props_list.append(f' {prop}="{self.props[prop]}"')
         prop_string = "".join(props_list)
         return prop_string
 
